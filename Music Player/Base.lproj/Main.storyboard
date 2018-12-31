@@ -342,7 +342,7 @@
         <!--View Controller-->
         <scene sceneID="RIj-GF-jcl">
             <objects>
-		    <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LoginScreenSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Music_Player" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -394,12 +394,11 @@
                         </constraints>
                     </view>
                     <connections>
-                      <outlet property="_login_button" destination="fCK-fo-Fo2" id="mao-W4-K80"/>
+                        <outlet property="_login_button" destination="fCK-fo-Fo2" id="mao-W4-K80"/>
                         <outlet property="_password" destination="DzS-qi-MIC" id="cTs-Fi-94g"/>
                         <outlet property="_username" destination="LLo-R9-ieE" id="1dg-cJ-y3I"/>
                     </connections>
                 </viewController>
-
                 <placeholder placeholderIdentifier="IBFirstResponder" id="41I-zP-jma" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="425" y="438"/>
