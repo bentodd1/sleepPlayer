@@ -1,5 +1,5 @@
-update add us-1z32mh2.opbdesktop.multiservice.com 86400 A 10.119.100.20
+update add us-c02tf1vzg8wn.opbdesktop.multiservice.com 86400 A 10.119.100.186
 send
-update add 20.100.119.10.in-addr.arpa 86400 PTR us-1z32mh2.opbdesktop.multiservice.com
+update add 186.100.119.10.in-addr.arpa 86400 PTR us-c02tf1vzg8wn.opbdesktop.multiservice.com
 send
 quit
