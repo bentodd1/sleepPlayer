@@ -3,22 +3,42 @@
 <plist version="1.0">
 <array>
 	<dict>
-		<key>artistName</key>
-		<string>Michael Seeley</string>
-		<key>albumName</key>
-		<string>Sleep</string>
 		<key>songName</key>
-		<string>Cosmic</string>
+		<string>ChakraBalance</string>
+		<key>artistName</key>
+		<string>Ben Todd</string>
+		<key>albumName</key>
+		<string>Magic</string>
 		<key>albumArtwork</key>
-		<string>demo1.png</string>
+		<string></string>
+	</dict>
+	<dict>
+		<key>albumName</key>
+		<string>Magic</string>
+		<key>songName</key>
+		<string>AlienAbduction</string>
+		<key>artistName</key>
+		<string>Ben Todd</string>
+		<key>albumArtwork</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>albumName</key>
+		<string>Magic</string>
+		<key>albumArtwork</key>
+		<string></string>
+		<key>songName</key>
+		<string>AstralTravel</string>
+		<key>artistName</key>
+		<string>Ben Todd</string>
 	</dict>
 	<dict>
 		<key>artistName</key>
-		<string>Dane Jones</string>
+		<string>Ben Todd</string>
 		<key>albumName</key>
-		<string>Sleep</string>
+		<string>Magic</string>
 		<key>songName</key>
-		<string>Sleeping In Water</string>
+		<string>TotemAnimal</string>
 		<key>albumArtwork</key>
 		<string>demo1.png</string>
 	</dict>

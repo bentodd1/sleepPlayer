@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A8619FE2237548600D4816D /* AstralTravel.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1A8619FD2237548600D4816D /* AstralTravel.mp3 */; };
+		1A861A002237549200D4816D /* ChakraBalance.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1A8619FF2237549200D4816D /* ChakraBalance.mp3 */; };
+		1A861A02223754A200D4816D /* TotemAnimal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1A861A01223754A200D4816D /* TotemAnimal.mp3 */; };
+		1A861A04223754BD00D4816D /* AlienAbduction.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1A861A03223754BC00D4816D /* AlienAbduction.mp3 */; };
 		D32130581BDCFAD700A45A00 /* Baby Be Mine.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D32130561BDCFAD700A45A00 /* Baby Be Mine.mp3 */; };
 		D32130591BDCFAD700A45A00 /* Beat It.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D32130571BDCFAD700A45A00 /* Beat It.mp3 */; };
 		D321305C1BDCFC3D00A45A00 /* demo2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D321305A1BDCFC3D00A45A00 /* demo2.jpg */; };
@@ -43,7 +47,6 @@
 		D3E3C32D1BDC0B74005A68D3 /* demo1.png in Resources */ = {isa = PBXBuildFile; fileRef = D3E3C32C1BDC0B74005A68D3 /* demo1.png */; };
 		D3E3C32F1BDC109C005A68D3 /* shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = D3E3C32E1BDC109C005A68D3 /* shadow.png */; };
 		D3E3C3311BDC15C9005A68D3 /* Billie Jean.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3E3C3301BDC15C9005A68D3 /* Billie Jean.mp3 */; };
-		EA227C9B21DAB6E800112762 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA227C9A21DAB6E800112762 /* ViewController.swift */; };
 		EA5EAE5521CAE7FB003D18BE /* Cosmic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EA5EAE5421CAE7FB003D18BE /* Cosmic.mp3 */; };
 		EA5EAE5721CAE8AE003D18BE /* Sleeping In Water.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EA5EAE5621CAE8AE003D18BE /* Sleeping In Water.mp3 */; };
 /* End PBXBuildFile section */
@@ -59,6 +62,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A8619FD2237548600D4816D /* AstralTravel.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AstralTravel.mp3; sourceTree = "<group>"; };
+		1A8619FF2237549200D4816D /* ChakraBalance.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ChakraBalance.mp3; sourceTree = "<group>"; };
+		1A861A01223754A200D4816D /* TotemAnimal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TotemAnimal.mp3; sourceTree = "<group>"; };
+		1A861A03223754BC00D4816D /* AlienAbduction.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AlienAbduction.mp3; sourceTree = "<group>"; };
 		D32130561BDCFAD700A45A00 /* Baby Be Mine.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Baby Be Mine.mp3"; sourceTree = "<group>"; };
 		D32130571BDCFAD700A45A00 /* Beat It.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Beat It.mp3"; sourceTree = "<group>"; };
 		D321305A1BDCFC3D00A45A00 /* demo2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = demo2.jpg; sourceTree = "<group>"; };
@@ -99,7 +106,6 @@
 		D3E3C32C1BDC0B74005A68D3 /* demo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = demo1.png; sourceTree = "<group>"; };
 		D3E3C32E1BDC109C005A68D3 /* shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shadow.png; sourceTree = "<group>"; };
 		D3E3C3301BDC15C9005A68D3 /* Billie Jean.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Billie Jean.mp3"; sourceTree = "<group>"; };
-		EA227C9A21DAB6E800112762 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../../Downloads/LoginScreenSwift/LoginScreenSwift/ViewController.swift; sourceTree = "<group>"; };
 		EA5EAE5421CAE7FB003D18BE /* Cosmic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Cosmic.mp3; sourceTree = "<group>"; };
 		EA5EAE5621CAE8AE003D18BE /* Sleeping In Water.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sleeping In Water.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -183,7 +189,11 @@
 		D3C174A719A36BEA00C3F4E4 /* music */ = {
 			isa = PBXGroup;
 			children = (
+				1A8619FF2237549200D4816D /* ChakraBalance.mp3 */,
+				1A8619FD2237548600D4816D /* AstralTravel.mp3 */,
+				1A861A01223754A200D4816D /* TotemAnimal.mp3 */,
 				EA5EAE5621CAE8AE003D18BE /* Sleeping In Water.mp3 */,
+				1A861A03223754BC00D4816D /* AlienAbduction.mp3 */,
 				D32130561BDCFAD700A45A00 /* Baby Be Mine.mp3 */,
 				EA5EAE5421CAE7FB003D18BE /* Cosmic.mp3 */,
 				D32130571BDCFAD700A45A00 /* Beat It.mp3 */,
@@ -218,7 +228,6 @@
 				D3D2E95219A36A0000DEF125 /* AppDelegate.swift */,
 				D3D2E95419A36A0000DEF125 /* PlayerViewController.swift */,
 				D36191BB19E9647B00CC9026 /* Main.storyboard */,
-				EA227C9A21DAB6E800112762 /* ViewController.swift */,
 				D33843851C1F7A7300348BE9 /* Launch Screen.storyboard */,
 				D3D2E95919A36A0000DEF125 /* Images.xcassets */,
 				D3D2E95019A36A0000DEF125 /* Supporting Files */,
@@ -345,6 +354,7 @@
 				D36835381DA2EA190083F964 /* background4.png in Resources */,
 				D3E3C32B1BDC030A005A68D3 /* background1.png in Resources */,
 				D33843861C1F7A7300348BE9 /* Launch Screen.storyboard in Resources */,
+				1A861A002237549200D4816D /* ChakraBalance.mp3 in Resources */,
 				D3B8BE801EBB5F7C00620EF9 /* screenshot1.png in Resources */,
 				D3C1749D19A36B6600C3F4E4 /* listS.png in Resources */,
 				D3C1749F19A36B6600C3F4E4 /* next.png in Resources */,
@@ -354,11 +364,13 @@
 				D3E3C32F1BDC109C005A68D3 /* shadow.png in Resources */,
 				EA5EAE5521CAE7FB003D18BE /* Cosmic.mp3 in Resources */,
 				D3C174A119A36B6600C3F4E4 /* pause.png in Resources */,
+				1A861A04223754BD00D4816D /* AlienAbduction.mp3 in Resources */,
 				D3B8BE7B1EBB5F7200620EF9 /* Music Player ReadMe.pdf in Resources */,
 				D36835371DA2EA190083F964 /* background3.png in Resources */,
 				D3B8BE821EBB5F7C00620EF9 /* screenshot3.png in Resources */,
 				D32130581BDCFAD700A45A00 /* Baby Be Mine.mp3 in Resources */,
 				EA5EAE5721CAE8AE003D18BE /* Sleeping In Water.mp3 in Resources */,
+				1A8619FE2237548600D4816D /* AstralTravel.mp3 in Resources */,
 				D34BBB1C1BDCD82100C1E73E /* shuffle_s.png in Resources */,
 				D34BBB1E1BDCD82100C1E73E /* shuffle.png in Resources */,
 				D3C174A219A36B6600C3F4E4 /* play.png in Resources */,
@@ -366,6 +378,7 @@
 				D3E3C3311BDC15C9005A68D3 /* Billie Jean.mp3 in Resources */,
 				D32130591BDCFAD700A45A00 /* Beat It.mp3 in Resources */,
 				D36191BE19E9647B00CC9026 /* Main.storyboard in Resources */,
+				1A861A02223754A200D4816D /* TotemAnimal.mp3 in Resources */,
 				D3D2E95A19A36A0000DEF125 /* Images.xcassets in Resources */,
 				D3B8BE811EBB5F7C00620EF9 /* screenshot2.png in Resources */,
 				D3B8BE831EBB5F7C00620EF9 /* screenshot4.png in Resources */,
@@ -388,7 +401,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA227C9B21DAB6E800112762 /* ViewController.swift in Sources */,
 				D3D2E95519A36A0000DEF125 /* PlayerViewController.swift in Sources */,
 				D3D2E95319A36A0000DEF125 /* AppDelegate.swift in Sources */,
 			);

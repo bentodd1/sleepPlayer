@@ -522,7 +522,8 @@ class PlayerViewController: UIViewController, UITableViewDelegate,UITableViewDat
     
     //Read plist file and creates an array of dictionary
     func readFromPlist(){
-        let path = Bundle.main.path(forResource: "list", ofType: "plist")
+        let path = Bundle.main.path(forResource: "list", ofType: "plist");
+        print ("\(path)");
         audioList = NSArray(contentsOfFile:path!)
     }
     
