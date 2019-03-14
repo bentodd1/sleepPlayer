@@ -17,6 +17,8 @@
 import UIKit
 import AVFoundation
 import MediaPlayer
+import SwiftyStoreKit
+import StoreKit
 
 
 extension UIImageView {
@@ -28,6 +30,11 @@ extension UIImageView {
     }
 }
 
+enum RegisteredPurchase : String {
+    case Dolla10 = "10Dolla"
+    case RemoveAds = "RemoveAds"
+    case autoRenewable = "autoRenewable"
+}
 
 
 
@@ -183,6 +190,60 @@ class PlayerViewController: UIViewController, UITableViewDelegate,UITableViewDat
 
     }
     
+    class NetworkActivityIndicatorManager : NSObject {
+        
+        private static var loadingCount = 0
+        
+        class func NetworkOperationStarted() {
+            if loadingCount == 0 {
+                
+                UIApplication.shared.isNetworkActivityIndicatorVisible = true
+            }
+            loadingCount += 1
+        }
+        class func networkOperationFinished(){
+            if loadingCount > 0 {
+                loadingCount -= 1
+                
+            }
+            
+            if loadingCount == 0 {
+                UIApplication.shared.isNetworkActivityIndicatorVisible = false
+                
+            }
+        }
+    }
+    
+    func purchase(purchase : RegisteredPurchase) {
+        NetworkActivityIndicatorManager.NetworkOperationStarted()
+        SwiftyStoreKit.purchaseProduct("bundleID" + "." + purchase.rawValue, completion: {
+            result in
+            NetworkActivityIndicatorManager.networkOperationFinished()
+            
+            if case .success(let product) = result {
+                
+                if product.productId == "bundleID" + "." + "10Dolla"{
+                    
+                   // 0 += 10
+                   // self.MoneyLbl.text = "\(self.Money)"
+                    
+                }
+               // if product.productId == self.bundleID + "." + "RemoveAds" {
+                    
+                   // self.Money += 100
+                    // self.MoneyLbl.text = "\(self.Money)"
+               // }
+                
+                if product.needsFinishTransaction {
+                    SwiftyStoreKit.finishTransaction(product.transaction)
+                }
+               // self.showAlert(alert: self.alertForPurchaseResult(result: result))
+            }
+            
+            
+        })
+        
+    }
     
     
 
