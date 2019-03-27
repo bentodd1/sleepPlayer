@@ -1,18 +1,3 @@
-//
-//  ViewController.swift
-//  Music Player
-//
-//  Created by polat on 19/08/14.
-//  Copyright (c) 2014 polat. All rights reserved.
-// contact  bpolat@live.com
-
-// Build 3 - July 1 2015 - Please refer git history for full changes
-// Build 4 - Oct 24 2015 - Please refer git history for full changes
-
-//Build 5 - Dec 14 - 2015 Adding shuffle - repeat
-//Build 6 - Oct 10 - 2016 iOS 10 update - iPhone 3g, 3gs screensize no more supported.
-
-
 
 import UIKit
 import AVFoundation
@@ -100,6 +85,7 @@ class PlayerViewController: UIViewController, UITableViewDelegate,UITableViewDat
         let artistName = readArtistNameFromPlist(currentAudioIndex)
         let songName = readSongNameFromPlist(currentAudioIndex)
         MPNowPlayingInfoCenter.default().nowPlayingInfo = [MPMediaItemPropertyArtist : artistName,  MPMediaItemPropertyTitle : songName]
+        //presentListTableView(self)
     }
     
     override func remoteControlReceived(with event: UIEvent?) {
@@ -149,7 +135,8 @@ class PlayerViewController: UIViewController, UITableViewDelegate,UITableViewDat
         
         cell.detailTextLabel?.font = UIFont(name: "BodoniSvtyTwoITCTT-Book", size: 16.0)
         cell.detailTextLabel?.textColor = UIColor.white
-        cell.detailTextLabel?.text = albumName
+        cell.detailTextLabel?.text = "purchase"
+        //cell.detailTextLabel?.
         return cell
     }
     
@@ -187,6 +174,7 @@ class PlayerViewController: UIViewController, UITableViewDelegate,UITableViewDat
         audioPlayer.isPlaying ? "\(playButton.setImage( pause, for: UIControlState()))" : "\(playButton.setImage(play , for: UIControlState()))"
         
         blurView.isHidden = true
+       // presentListTableView(self)
 
     }
     
@@ -265,14 +253,18 @@ class PlayerViewController: UIViewController, UITableViewDelegate,UITableViewDat
     
     
     override func viewDidLoad() {
+        print("View Did Load")
+        //effectToggle = !effectToggle
         let preferences = UserDefaults.standard
         
         if(preferences.object(forKey: "session") != nil)
         {
+           // presentListTableView(self)
           //  LoginDone()
         }
         else
         {
+           // presentListTableView(self)
            // LoginToDo()
         }
         super.viewDidLoad()
@@ -283,6 +275,7 @@ class PlayerViewController: UIViewController, UITableViewDelegate,UITableViewDat
         //this sets last listened trach number as current
         retrieveSavedTrackNumber()
         prepareAudio()
+        
         updateLabels()
         assingSliderUI()
         setRepeatAndShuffle()
@@ -293,7 +286,7 @@ class PlayerViewController: UIViewController, UITableViewDelegate,UITableViewDat
             UIApplication.shared.beginBackgroundTask(expirationHandler: { () -> Void in
             })
         }
-
+       // presentListTableView(self)
 
     }
 
@@ -322,6 +315,7 @@ class PlayerViewController: UIViewController, UITableViewDelegate,UITableViewDat
         self.tableViewContainerTopConstrain.constant = 1000.0
         self.tableViewContainer.layoutIfNeeded()
         blurView.isHidden = true
+        presentListTableView(self)
     }
     
     
@@ -452,6 +446,8 @@ class PlayerViewController: UIViewController, UITableViewDelegate,UITableViewDat
         showTotalSongLength()
         updateLabels()
         progressTimerLabel.text = "00:00"
+        
+        //print("Preparing audio")
         
         
     }
@@ -717,6 +713,8 @@ class PlayerViewController: UIViewController, UITableViewDelegate,UITableViewDat
     
     @IBAction func next(_ sender : AnyObject) {
         playNextAudio()
+       // presentListTableView(self)
+        
     }
     
     
@@ -786,12 +784,16 @@ class PlayerViewController: UIViewController, UITableViewDelegate,UITableViewDat
     
     
     @IBAction func presentListTableView(_ sender : AnyObject) {
+       //effectToggle = !effectToggle
+        //print("animate table view on screen")
         if effectToggle{
+            print("animate table view to on screen")
             isTableViewOnscreen = true
             setNeedsStatusBarAppearanceUpdate()
             self.animateTableViewToScreen()
             
         }else{
+            print("animate table view to off screen")
             self.animateTableViewToOffScreen()
             
         }
@@ -799,6 +801,7 @@ class PlayerViewController: UIViewController, UITableViewDelegate,UITableViewDat
         let showList = UIImage(named: "list")
         let removeList = UIImage(named: "listS")
         effectToggle ? "\(listButton.setImage( showList, for: UIControlState()))" : "\(listButton.setImage(removeList , for: UIControlState()))"
+        
     }
     
     
@@ -904,5 +907,8 @@ class PlayerViewController: UIViewController, UITableViewDelegate,UITableViewDat
     }
     
     
+    @IBOutlet weak var TableViewIsClicked: UITableView!
     
+    @IBAction func Next(_ sender: Any) {
+    }
 }
